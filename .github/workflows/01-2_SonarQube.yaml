@@ -1,0 +1,9 @@
+name: 01 - 2 SonarQube
+
+on:
+  workflow_call
+
+jobs:
+  # QualityBack:
+
+  # QualityFront:
