@@ -24,7 +24,7 @@ jobs:
 
       - name: Downcase IMAGE Name
         run: |
-          echo "IMAGE_NAME_LOWER=$(GITHUB_REPOSITORY,,}" >> ${GITHUB_ENV}
+          echo "IMAGE_NAME_LOWER=${GITHUB_REPOSITORY,,}" >> ${GITHUB_ENV}
 
       - name: Back Build Push
         uses: docker/build-push-action@v4
