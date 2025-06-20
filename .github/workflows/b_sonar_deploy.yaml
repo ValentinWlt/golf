@@ -2,11 +2,12 @@ name: Sonar_Deploy
 
 on:
   push:
-    pull_request:
-      - main
-  push:
     branches:
-      - main
+      - marcel
+  pull_request:
+    branches:
+      - marcel
+
 
 jobs:
   Display_Data:
