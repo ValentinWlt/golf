@@ -31,12 +31,12 @@ jobs:
         with:
           context: ./backend/.
           push: true
-          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME_LOWER }}-back:latest
+          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME_LOWER }}-back:jeanpeuplus
 
       - name: Front Build Push
         uses: docker/build-push-action@v4
         with:
           context: ./frontend/.
           push: true
-          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME_LOWER }}-front:latest
+          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME_LOWER }}-front:jeanpeuplus
   
