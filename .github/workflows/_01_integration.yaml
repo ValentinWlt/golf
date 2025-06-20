@@ -19,7 +19,7 @@ jobs:
     steps:
       - run: env | sort    
   Quality_SonarQube:
-    if: ${{ github.event_name == 'pull_request' && github.base_ref == 'main' }}
+    if: ${{ github.event_name == 'pull_request'}}
     needs: [Test_Back_Front]
     uses: ./.github/workflows/01-2_SonarQube.yaml
     secrets: inherit
