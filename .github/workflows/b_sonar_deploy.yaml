@@ -1,0 +1,15 @@
+name: Sonar_Deploy
+
+on:
+  push:
+    pull_request:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  Display_Data:
+    runs-on: ubuntu-latest
+    steps:
+      - run: env | sort
