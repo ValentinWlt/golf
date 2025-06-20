@@ -31,7 +31,7 @@ jobs:
         
           script: |
             echo ${{secrets.GOLF_TOKEN}} | docker login ghcr.io -u valentinwlt --password-stdin
-            docker pull ghcr.io/valentinwlt/golf-back:latest
-            docker pull ghcr.io/valentinwlt/golf-front:latest
+            docker pull ghcr.io/valentinwlt/golf-back:jeanpeuplus
+            docker pull ghcr.io/valentinwlt/golf-front:jeanpeuplus
 
             docker compose up -d          

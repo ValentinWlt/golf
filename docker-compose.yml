@@ -18,7 +18,7 @@ services:
 
   golf_backend_build:
     container_name: golf_backend_build
-    image: ghcr.io/valentinwlt/golf-back:latest
+    image: ghcr.io/valentinwlt/golf-back:jeanpeuplus
     environment:
       BDD_HOST: golf_bdd
     ports:
@@ -29,6 +29,6 @@ services:
 
   golf_frontend:
     container_name: golf_frontend
-    image: ghcr.io/valentinwlt/golf-front:latest
+    image: ghcr.io/valentinwlt/golf-front:jeanpeuplus
     ports:
       - 80:80
